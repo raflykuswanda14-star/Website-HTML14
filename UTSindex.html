@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Pribadi - Halaman Utama</title>
+    <link rel="stylesheet" href="UTS.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">MyProfile</h1>
+            <nav>
+                <ul>
+                    <li><a href="UTSindex.html" class="active">Beranda</a></li>
+                    <li><a href="UTSabout.html">Tentang</a></li>
+                    <li><a href="UTSportfolio.html">Portofolio</a></li>
+                    <li><a href="UTScontact.html">Kontak</a></li>
+                </ul>
+            </nav>
+            <button id="theme-toggle" class="theme-btn">Mode Gelap</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1>Halo, Saya <span class="highlight">Rafly Kuswanda Putra</span></h1>
+                        <p>Selamat datang di website pribadi saya. Saya seorang mahasiswa yang tertarik pada web development.</p>
+                        <div class="cta-buttons">
+                            <a href="UTSportofolio.html" class="btn primary">Lihat Portofolio</a>
+                            <a href="UTScontact.html" class="btn secondary">Hubungi Saya</a>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <img src="gambar_1.jpeg" alt="Foto Profil">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills">
+            <div class="container">
+                <h2>Keahlian Saya</h2>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <div class="skill-icon">💻</div>
+                        <h3>Pengembangan Web</h3>
+                        <p>HTML, CSS, JavaScript</p>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">🎨</div>
+                        <h3>Desain UI/UX</h3>
+                        <p>Canva, Adobe XD, Blender</p>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">📱</div>
+                        <h3>Responsif Design</h3>
+                        <p>Mobile-first, Cross-browser</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="current-year">2025</span> MyProfile. Hak Cipta Dilindungi.</p>
+            <p id="current-time"></p>
+        </div>
+    </footer>
+
+    <script src="UTS.js"></script>
+</body>
+</html>

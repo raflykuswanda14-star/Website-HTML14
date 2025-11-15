@@ -1,0 +1,283 @@
+/* GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #f5f5f5;
+    color: #222;
+    transition: background 0.3s, color 0.3s;
+}
+
+.dark-mode {
+    background: #111;
+    color: #e5e5e5;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    max-width: 1200px;
+}
+
+/* HEADER */
+header {
+    background: #fff;
+    padding: 18px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: background 0.3s;
+}
+
+.dark-mode header {
+    background: #1a1a1a;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* NAVIGATION */
+nav ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #222;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #007bff;
+}
+
+.dark-mode nav ul li a {
+    color: #ddd;
+}
+
+/* BUTTON */
+.theme-btn {
+    padding: 8px 16px;
+    border: none;
+    background: #007bff;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.theme-btn:hover {
+    background: #0056c7;
+}
+
+/* HERO */
+.hero {
+    padding: 80px 0;
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-text h1 {
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.highlight {
+    color: #007bff;
+}
+
+.hero-text p {
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.cta-buttons .btn {
+    margin-right: 12px;
+}
+
+.hero-image img {
+    width: 300px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 5px 12px rgba(0,0,0,0.25);
+}
+
+/* BUTTON STYLE */
+.btn {
+    padding: 12px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.btn.primary {
+    background: #007bff;
+    color: white;
+}
+
+.btn.secondary {
+    background: #333;
+    color: white;
+}
+
+/* SKILLS */
+.skills {
+    text-align: center;
+    padding: 60px 0;
+}
+
+.skills-grid {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.skill-item {
+    background: white;
+    padding: 25px;
+    width: 220px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.skill-item:hover {
+    transform: translateY(-8px);
+}
+
+.dark-mode .skill-item {
+    background: #1b1b1b;
+}
+
+/* ABOUT */
+.about {
+    padding: 70px 0;
+}
+
+.about-content {
+    display: flex;
+    gap: 40px;
+}
+
+.about-image img {
+    width: 280px;
+    border-radius: 15px;
+    box-shadow: 0 5px 12px rgba(0,0,0,0.25);
+}
+
+.about-details table {
+    margin: 15px 0;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.about-details th,
+.about-details td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    text-align: left;
+}
+
+.dark-mode .about-details th,
+.dark-mode .about-details td {
+    border-color: #444;
+}
+
+/* EXPERIENCE */
+.experience .exp-item {
+    margin-top: 20px;
+    padding: 18px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.dark-mode .experience .exp-item {
+    background: #1a1a1a;
+}
+
+/* PORTFOLIO */
+.portfolio-item {
+    display: flex;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.portfolio-image img {
+    width: 330px;
+    border-radius: 12px;
+}
+
+/* CONTACT */
+.contact {
+    padding: 70px 0;
+}
+
+.contact-content {
+    display: flex;
+    gap: 40px;
+}
+
+.contact-info, .contact-form {
+    flex: 1;
+}
+
+.contact-item {
+    display: flex;
+    margin-bottom: 18px;
+    gap: 12px;
+}
+
+.contact-icon {
+    font-size: 26px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #bbb;
+    margin-bottom: 15px;
+}
+
+/* FOOTER */
+footer {
+    margin-top: 60px;
+    padding: 20px 0;
+    text-align: center;
+    background: #fff;
+}
+
+.dark-mode footer {
+    background: #1a1a1a;
+}

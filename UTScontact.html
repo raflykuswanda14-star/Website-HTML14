@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak - Profil Pribadi</title>
+    <link rel="stylesheet" href="UTS.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">MyProfile</h1>
+            <nav>
+                <ul>
+                    <li><a href="UTSindex.html">Beranda</a></li>
+                    <li><a href="UTSabout.html">Tentang</a></li>
+                    <li><a href="UTSportofolio.html">Portofolio</a></li>
+                    <li><a href="UTScontact.html" class="active">Kontak</a></li>
+                </ul>
+            </nav>
+            <button id="theme-toggle" class="theme-btn">Mode Gelap</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="contact">
+            <div class="container">
+                <h1>Hubungi Saya</h1>
+                <p class="contact-subtitle">Silakan tinggalkan pesan, dan saya akan membalas secepatnya</p>
+                
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h2>Informasi Kontak</h2>
+                        <div class="contact-item">
+                            <div class="contact-icon">📧</div>
+                            <div class="contact-details">
+                                <h3>Email</h3>
+                                <p>raflykuswanda14@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📱</div>
+                            <div class="contact-details">
+                                <h3>Telepon</h3>
+                                <p>+62 856 9259 4306</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div class="contact-details">
+                                <h3>Lokasi</h3>
+                                <p>Cibarusah, Kabupaten Bekasi, Jawa Barat, Indonesia 17340</p>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <h3>Media Sosial</h3>
+                            <div class="social-icons">
+                                <a href="#" class="social-icon">GitHub</a>
+                                <a href="https://www.instagram.com/rflykswndp?igsh=MXVhNm1lemhzejcyMw==" class="social-icon">Instagram</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form">
+                        <h2>Kirim Pesan</h2>
+                        <form id="contact-form">
+                            <div class="form-group">
+                                <label for="name">Nama Lengkap</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Alamat Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subjek</label>
+                                <input type="text" id="subject" name="subject">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Pesan</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn primary">Kirim Pesan</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="current-year">2025</span> MyProfile. Hak Cipta Dilindungi.</p>
+            <p id="current-time"></p>
+        </div>
+    </footer>
+
+    <script src="UTS.js"></script>
+</body>
+</html>
